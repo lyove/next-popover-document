@@ -61,19 +61,19 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: "img/docusaurus-social-card.jpg",
+      image: "img/social-card.jpg",
       navbar: {
         title: "Next-Popover",
         logo: {
           alt: "Next-Popover",
-          src: "img/logo.svg",
+          src: "img/logo.png",
         },
         items: [
           {
             type: "docSidebar",
             sidebarId: "tutorialSidebar",
             position: "left",
-            label: "Tutorial",
+            label: "Documents",
           },
           { to: "/blog", label: "Blog", position: "left" },
           {
@@ -90,8 +90,8 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Tutorial",
-                to: "/docs/intro",
+                label: "Documents",
+                to: "/docs/introduction",
               },
             ],
           },
@@ -123,7 +123,7 @@ const config = {
       docs: {
         sidebar: {
           hideable: true,
-          autoCollapseCategories: true,
+          autoCollapseCategories: false,
         },
       },
       prism: {

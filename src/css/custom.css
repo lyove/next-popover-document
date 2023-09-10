@@ -13,6 +13,7 @@
   --ifm-color-primary-light: #33925d;
   --ifm-color-primary-lighter: #359962;
   --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-menu-left-border: #e4e4e4;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
@@ -26,6 +27,7 @@
   --ifm-color-primary-light: #29d5b0;
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-menu-left-border: #353535;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
@@ -42,24 +44,19 @@
   border-radius: 0;
 }
 
-.theme-doc-sidebar-menu
-  .menu__list-item-collapsible
-  a.menu__link.menu__link--sublist.menu__link:hover,
-.theme-doc-sidebar-menu
-  .menu__list-item-collapsible
-  a.menu__link.menu__link--sublist.menu__link--active {
-  /*  */
+.theme-doc-sidebar-menu .menu__list-item a.menu__link:not(.menu__link--sublist) {
+  border-left: 1px solid var(--ifm-color-menu-left-border);
 }
 
-.theme-doc-sidebar-menu .menu__list-item a.menu__link {
-  border-left: 1px solid #e4e4e4;
+.theme-doc-sidebar-menu .menu__list-item.theme-doc-sidebar-item-link-level-1 a.menu__link {
+  border-left: 1px solid transparent;
 }
 
-.theme-doc-sidebar-menu .menu__list-item a.menu__link:active,
-.theme-doc-sidebar-menu .menu__list-item a.menu__link:hover,
-.theme-doc-sidebar-menu .menu__list-item a.menu__link--active {
-  border-left-color: #2e8555;
-  color: #2e8555;
+.theme-doc-sidebar-menu .menu__list-item:not(.theme-doc-sidebar-item-link-level-1) a.menu__link:not(.menu__link--sublist):active,
+.theme-doc-sidebar-menu .menu__list-item:not(.theme-doc-sidebar-item-link-level-1) a.menu__link:not(.menu__link--sublist):hover,
+.theme-doc-sidebar-menu .menu__list-item:not(.theme-doc-sidebar-item-link-level-1) a.menu__link--active:not(.menu__link--sublist) {
+  border-left-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
 }
 
 .theme-doc-sidebar-menu .menu__list-item .menu__caret {
@@ -80,3 +77,5 @@
   background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyIDEwIDggNmwtNCA0IiBzdHJva2U9IiMxQjI3MzgiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=)
     50% no-repeat;
 }
+
+/* #25c2a0; */
