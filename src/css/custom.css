@@ -18,7 +18,7 @@
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
+[data-theme="dark"] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
@@ -27,4 +27,56 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.theme-doc-sidebar-container nav.menu {
+  padding: 16px 0;
+}
+
+.theme-doc-sidebar-menu .menu__list-item {
+  margin: 0;
+}
+
+.theme-doc-sidebar-menu .menu__list-item-collapsible,
+.theme-doc-sidebar-menu .menu__list-item .menu__link {
+  border-radius: 0;
+}
+
+.theme-doc-sidebar-menu
+  .menu__list-item-collapsible
+  a.menu__link.menu__link--sublist.menu__link:hover,
+.theme-doc-sidebar-menu
+  .menu__list-item-collapsible
+  a.menu__link.menu__link--sublist.menu__link--active {
+  /*  */
+}
+
+.theme-doc-sidebar-menu .menu__list-item a.menu__link {
+  border-left: 1px solid #e4e4e4;
+}
+
+.theme-doc-sidebar-menu .menu__list-item a.menu__link:active,
+.theme-doc-sidebar-menu .menu__list-item a.menu__link:hover,
+.theme-doc-sidebar-menu .menu__list-item a.menu__link--active {
+  border-left-color: #2e8555;
+  color: #2e8555;
+}
+
+.theme-doc-sidebar-menu .menu__list-item .menu__caret {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.theme-doc-sidebar-menu .menu__list-item .menu__caret,
+.theme-doc-sidebar-menu .menu__list-item .menu__caret:active,
+.theme-doc-sidebar-menu .menu__list-item .menu__caret:hover {
+  border-radius: 0;
+}
+
+.theme-doc-sidebar-menu .menu__list-item .menu__caret:before,
+.theme-doc-sidebar-menu .menu__list-item .menu__link--sublist:after {
+  background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyIDEwIDggNmwtNCA0IiBzdHJva2U9IiMxQjI3MzgiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=)
+    50% no-repeat;
 }

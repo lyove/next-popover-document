@@ -120,6 +120,12 @@ const config = {
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Lyove, Inc.`,
       },
+      docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: true,
+        },
+      },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
